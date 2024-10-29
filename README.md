@@ -32,25 +32,25 @@ cd Gestor-tareas
 npm install
 
 
-Uso
+## Uso
 Ejecuta el programa con el siguiente comando:
 
 node proyecto.js
 
 Menú de Opciones:
--.Agregar Tarea: Permite agregar una nueva tarea con un nombre y una fecha límite opcional. También puedes asignar la -.tarea a una categoría.
--.Eliminar Tarea: Elimina una tarea específica ingresando su índice.
--.Marcar como Completada: Marca una tarea como completada.
--.Modificar Tarea: Modifica el nombre, fecha límite o categoría de una tarea.
--.Mostrar Tareas: Muestra todas las tareas registradas.
--.Mostrar Categorías: Muestra todas las categorías disponibles.
--.Agregar Categoría: Agrega una nueva categoría al gestor de tareas.
--.Filtrar Tareas por Categoría: Muestra solo las tareas de una categoría específica.
--.Contar Tareas Completadas por Categoría: Muestra el conteo de tareas completadas en una categoría.
--.Tareas No Completadas: Muestra todas las tareas que no están completadas.
+1.Agregar Tarea: Permite agregar una nueva tarea con un nombre y una fecha límite opcional. También puedes asignar la tarea a una categoría.
+1.Eliminar Tarea: Elimina una tarea específica ingresando su índice.
+2.Marcar como Completada: Marca una tarea como completada.
+3.Modificar Tarea: Modifica el nombre, fecha límite o categoría de una tarea.
+4.Mostrar Tareas: Muestra todas las tareas registradas.
+5.Mostrar Categorías: Muestra todas las categorías disponibles.
+6.Agregar Categoría: Agrega una nueva categoría al gestor de tareas.
+7.Filtrar Tareas por Categoría: Muestra solo las tareas de una categoría específica.
+8.Contar Tareas Completadas por Categoría: Muestra el conteo de tareas completadas en una categoría.
+9.Tareas No Completadas: Muestra todas las tareas que no están completadas.
 
 
-Ejemplo de Uso
+## Ejemplo de Uso
 Al ejecutar el programa, el menú mostrará varias opciones. Puedes ingresar el número correspondiente a la opción deseada y seguir las instrucciones para interactuar con el gestor de tareas.
 
 Ejemplo de flujo para agregar una tarea:
