@@ -151,6 +151,26 @@ function ordenarTareasPorFecha(){
   }
 }
 
+//funcion que busca una tarea por nombre y retorna su pocision
+function buscarTareaPornombre(nombreTarea){
+  let inicio = 0
+  let fin = tareas.length -1
+
+  while(inicio <= fin){
+
+    let medio = Math.floor((inicio + fin)/2)
+
+    if(tareas[medio].nombre === nombreTarea){
+      return medio
+    }else if(tareas[medio].nombre < nombreTarea){
+      inicio = medio + 1
+    }else{
+      fin = medio -1
+    }
+  }
+  return -1
+}
+
 
 // function para mostraMenu
 function mostrarMenu() {
@@ -167,6 +187,7 @@ function mostrarMenu() {
   console.log("10. tareas no completadas");
   console.log("11. ordenar Tareas alfabeticamente");
   console.log("12. Ordenar Tareas por fecha limite");
+  console.log("13. Buscar tarea por su nombre");
 
   console.log("0. salir");
 }
@@ -285,7 +306,17 @@ function interactuarUsuario() {
         ordenarTareasPorFecha()
         console.log("TAREAS ORDENADAS POR FECHA: ")
         console.log(tareas)
-        break;  
+        break; 
+      case 13:
+        ordenarTareasPorNombre()
+        let nombreABuscar = prompt("ingrese nombre de la tarea a buscar: ")
+        let inidiceTarea = buscarTareaPornombre(nombreABuscar)
+        if(inidiceTarea === -1){
+          console.log("Tarea no encontrada")
+        }else{
+          console.log(`Tarea encontrada en el indice: ${inidiceTarea}`)
+        }
+        break;   
       case 0:
         break;
 
