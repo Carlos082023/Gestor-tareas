@@ -122,6 +122,35 @@ function mostrarTareasNoCompletadas() {
   }
 }
 
+//funcio para ordenar tareas por la propiedad nombre utilizando bbuble sort
+function ordenarTareasPorNombre(){
+  let total = tareas.length
+
+  for(let j = 0; j < total; j++){
+    for(let i = 0 ; i < total-1; i++){
+      if(tareas[i].nombre > tareas[i+1].nombre){
+        let tem = tareas[i]
+        tareas[i] = tareas[i+1]
+        tareas[i+1] = tem
+      }
+    }
+  }
+}
+//funcio para ordenar tareas por la propiedad fecha utilizando bbuble sort
+function ordenarTareasPorFecha(){
+  let total = tareas.length
+
+  for(let j = 0; j < total; j++){
+    for(let i = 0 ; i < total-1; i++){
+      if(tareas[i].fechaLimite > tareas[i+1].fechaLimite){
+        let tem = tareas[i]
+        tareas[i] = tareas[i+1]
+        tareas[i+1] = tem
+      }
+    }
+  }
+}
+
 
 // function para mostraMenu
 function mostrarMenu() {
@@ -136,6 +165,9 @@ function mostrarMenu() {
   console.log("8. filtrar tareas por categorias");
   console.log("9. cantidad de tareas completadas por categorias");
   console.log("10. tareas no completadas");
+  console.log("11. ordenar Tareas alfabeticamente");
+  console.log("12. Ordenar Tareas por fecha limite");
+
   console.log("0. salir");
 }
 
@@ -244,6 +276,16 @@ function interactuarUsuario() {
       case 10:
         mostrarTareasNoCompletadas();
         break;
+      case 11:
+        ordenarTareasPorNombre()
+        console.log("TAREAS ORDENADAS POR NOMBRE: ")
+        console.log(tareas)
+        break;
+      case 12:
+        ordenarTareasPorFecha()
+        console.log("TAREAS ORDENADAS POR FECHA: ")
+        console.log(tareas)
+        break;  
       case 0:
         break;
 

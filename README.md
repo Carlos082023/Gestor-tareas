@@ -39,15 +39,15 @@ node proyecto.js
 
 Menú de Opciones:
 1.Agregar Tarea: Permite agregar una nueva tarea con un nombre y una fecha límite opcional. También puedes asignar la tarea a una categoría.
-1.Eliminar Tarea: Elimina una tarea específica ingresando su índice.
-2.Marcar como Completada: Marca una tarea como completada.
-3.Modificar Tarea: Modifica el nombre, fecha límite o categoría de una tarea.
-4.Mostrar Tareas: Muestra todas las tareas registradas.
-5.Mostrar Categorías: Muestra todas las categorías disponibles.
-6.Agregar Categoría: Agrega una nueva categoría al gestor de tareas.
-7.Filtrar Tareas por Categoría: Muestra solo las tareas de una categoría específica.
-8.Contar Tareas Completadas por Categoría: Muestra el conteo de tareas completadas en una categoría.
-9.Tareas No Completadas: Muestra todas las tareas que no están completadas.
+2.Eliminar Tarea: Elimina una tarea específica ingresando su índice.
+3.Marcar como Completada: Marca una tarea como completada.
+4.Modificar Tarea: Modifica el nombre, fecha límite o categoría de una tarea.
+5.Mostrar Tareas: Muestra todas las tareas registradas.
+6.Mostrar Categorías: Muestra todas las categorías disponibles.
+7.Agregar Categoría: Agrega una nueva categoría al gestor de tareas.
+8.Filtrar Tareas por Categoría: Muestra solo las tareas de una categoría específica.
+9.Contar Tareas Completadas por Categoría: Muestra el conteo de tareas completadas en una categoría.
+10.Tareas No Completadas: Muestra todas las tareas que no están completadas.
 
 
 ## Ejemplo de Uso
